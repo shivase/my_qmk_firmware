@@ -940,7 +940,7 @@ nrfutil: $(TARGET).zip
 		fi; \
 		sleep 1; \
 		echo "Programming Started"; \
-		$(NRFUTIL) dfu usb_serial -pkg $(TARGET).zip -p $$USB; \
+		$(NRFUTIL) dfu usb-serial -pkg $(TARGET).zip -p $$USB; \
 	fi
 
 elf: $(NRFLIB)
